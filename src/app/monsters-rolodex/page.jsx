@@ -1,1 +1,8 @@
-const { default: ViewMonster} = require ("@/infrastructure/features/ViewMonstersRolodex/ViewMonstersRolodex")
+import ViewMonstersRolodex from "@/infrastructure/features/ViewMonstersRolodex/ViewMonstersRolodex"
+
+function MonsterRolodexPage(){
+    return (
+        <ViewMonstersRolodex/>
+    )
+}
+export default MonsterRolodexPage

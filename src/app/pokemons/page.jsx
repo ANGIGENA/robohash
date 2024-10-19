@@ -1,5 +1,7 @@
-const {
-  default: ViewPokemons
-} = require("@/infrastructure/features/ViewPokemons/ViewPokemons");
+import ViewPokemons from "@/infrastructure/features/ViewPokemons/ViewPokemons";
 
+function PokemonsPage() {
+  return <ViewPokemons />;
+}
 
+export default PokemonsPage;
