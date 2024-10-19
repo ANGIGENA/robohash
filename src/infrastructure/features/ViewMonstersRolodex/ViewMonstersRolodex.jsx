@@ -1,11 +1,17 @@
-import styles from "./Styles.module.css"
-
+"use client";
+import { useState } from "react";
+import styles from "./Styles.module.css";
+import { MOCKMONSTERS } from "./constants";
 
 function ViewMonstersRolodex() {
-    return(
-        <div>
-            Monsters
-        </div>
-    )
+  const [monsters, setMonsters] = useState(MOCKMONSTERS);
+
+  return (
+    <div>
+      {monsters.map((monster) => {
+        return <span>{monster.name}</span>;
+      })}
+    </div>
+  );
 }
-export default ViewMonstersRolodex
+export default ViewMonstersRolodex;
